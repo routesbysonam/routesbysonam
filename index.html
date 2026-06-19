@@ -4,20 +4,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Routes By Sonam</title>
 <style>
-body{font-family:Arial,sans-serif;margin:0;background:#f5f5f5;}
-.hero{background:#0F4C81;color:white;text-align:center;padding:50px 20px;}
-.hero img{width:180px;border-radius:10px;margin-bottom:15px;}
+body{font-family:Arial,sans-serif;margin:0;background:#f5f5f5;color:#333;}
+.navbar{background:#fff;padding:15px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.1);position:sticky;top:0;z-index:1000;}
+.navbar a{margin:0 15px;text-decoration:none;font-weight:bold;color:#0F4C81;}
+.hero{background:linear-gradient(135deg,#0F4C81,#1f6bb8);color:white;text-align:center;padding:60px 20px;}
+.hero img{width:180px;border-radius:10px;margin-bottom:15px;background:white;padding:10px;}
 .hero h1{margin:10px 0;font-size:42px;}
-.book-btn{display:inline-block;background:#25D366;color:white;padding:15px 30px;text-decoration:none;border-radius:30px;font-weight:bold;margin-top:15px;}
-.sec{max-width:1200px;margin:auto;padding:20px;}
+.hero p{font-size:18px;}
+.btn{display:inline-block;background:#25D366;color:white;padding:14px 28px;text-decoration:none;border-radius:30px;font-weight:bold;margin-top:15px;}
+.sec{max-width:1200px;margin:auto;padding:30px 20px;}
+.card{background:white;padding:20px;border-radius:12px;margin-bottom:20px;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;}
 .gallery img{width:100%;height:250px;object-fit:cover;border-radius:10px;}
-.highlights{background:white;padding:20px;border-radius:10px;margin-top:20px;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
-footer{background:#0F4C81;color:white;text-align:center;padding:20px;margin-top:30px;}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50%font-size:24px;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:9999;}
+footer{background:#0F4C81;color:white;text-align:center;padding:25px;margin-top:40px;}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50%;font-size:24px;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:9999;}
 </style>
 </head>
 <body>
+<div class="navbar">
+<a href="#">Home</a>
+<a href="#packages">Packages</a>
+<a href="#about">About Us</a>
+<a href="#contact">Contact Us</a>
+</div>
 <div class="hero">
 <img src="logo.jpeg">
 <h1>ROUTES BY SONAM</h1>
@@ -25,24 +34,22 @@ footer{background:#0F4C81;color:white;text-align:center;padding:20px;margin-top:
 <p>Weekend Getaways • Group Tours • Spiritual Trips</p>
 <p>📞 9873371750</p>
 <p>📧 routesbysonam@gmail.com</p>
-<a class="book-btn"
-href="https://wa.me/919873371750">
+<a class="btn" href="https://wa.me/919873371750">
 Book on WhatsApp
 </a>
 </div>
-<div class="sec">
-<div class="highlights">
+<div class="sec" id="packages">
 <h2>🌍 Our Packages</h2>
+<div class="card">
 <h3>🌲 Nainital Tour Package</h3>
 <p>Weekly Departures Available</p>
-<p>
-Beautiful Hills • Kainchi Dham • Mukteshwar • Bhimtal
-</p>
-<a class="book-btn"
-href="nainital.html">
+<p>Kainchi Dham • Mukteshwar • Bhimtal • Naini Lake</p>
+<a class="btn" href="nainital.html">
 View Details
 </a>
 </div>
+</div>
+<div class="sec">
 <h2>📸 Tour Gallery</h2>
 <div class="gallery">
 <img src="gallery0.jpg">
@@ -51,27 +58,27 @@ View Details
 <img src="gallery3.jpg">
 <img src="gallery4.jpg">
 </div>
-<div class="highlights">
+</div>
+<div class="sec" id="about">
+<div class="card">
 <h2>About Routes By Sonam</h2>
 <p>
-Routes By Sonam offers carefully planned tours,
-weekend getaways, spiritual journeys and group trips
-across India.
+Routes By Sonam offers carefully planned tours, weekend getaways,
+spiritual journeys and group trips across India.
 </p>
 <p>
-Our mission is to create memorable travel experiences
-with comfortable travel, quality stays and affordable pricing.
+Our mission is to provide memorable travel experiences with
+comfortable travel, quality stays and affordable pricing.
 </p>
 </div>
 </div>
-<footer>
+<footer id="contact">
 <h3>Routes By Sonam</h3>
 <p>📞 9873371750</p>
 <p>📧 routesbysonam@gmail.com</p>
 <p>Discover India, One Journey at a Time</p>
 </footer>
-<a class="whatsapp"
-href="https://wa.me/919873371750">
+<a class="whatsapp" href="https://wa.me/919873371750">
 💬
 </a>
 </body>
